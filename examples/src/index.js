@@ -1,7 +1,8 @@
-import React from 'react';
-import { render} from 'react-dom';
-import MyComponent from '../../src';
-const App = () => (
-    <MyComponent />
-);
+import React from "react";
+import { render } from "react-dom";
+import TimeAgo from "../../src";
+const App = () => {
+  return <TimeAgo date={new Date()} type="default" suffix="ago" />;
+};
+
 render(<App />, document.getElementById("root"));
