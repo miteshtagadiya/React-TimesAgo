@@ -13,7 +13,7 @@ class TimeAgo extends Component {
 
   componentDidMount() {
     this.interval = setInterval(
-      () => this.setState({ time: Date.now() }),
+      () => this.setState({ t: Date.now() }),
       1000
     );
   }
@@ -144,7 +144,7 @@ TimeAgo.defaultProps = {
   prefix: "",
   suffix: "ago",
   type: "default",
-  time: new Date()
+  time: new Date(1551788578911 * 1000)
 };
 
 export default TimeAgo;
