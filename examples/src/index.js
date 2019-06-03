@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-import TimeAgo from "../../src";
+import TimesAgo from "../../src";
 var moment = require("moment");
 
 const App = () => {
@@ -8,7 +8,8 @@ const App = () => {
     <body>
       <div style={{ textAlign: "center" }}>
         <h2>Default</h2>
-        <center>
+        <code>{`<TimesAgo time={"time"} type="default" suffix="ago" />`}</code>
+        <center style={{ marginTop: 15 }}>
           <table style={{ border: "1px solid black" }}>
             <th style={{ border: "1px solid black" }}>
               <td>Input</td>
@@ -21,7 +22,7 @@ const App = () => {
                 {moment().format("LLL")}
               </td>
               <td style={{ border: "1px solid black" }}>
-                {<TimeAgo time={moment()} type="default" suffix="ago" />}
+                {<TimesAgo time={moment()} type="default" suffix="ago" />}
               </td>
             </tr>
             <tr style={{ border: "1px solid black" }}>
@@ -32,7 +33,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(1, "days")}
                     type="default"
                     suffix="ago"
@@ -48,7 +49,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(5, "days")}
                     type="default"
                     suffix="ago"
@@ -64,7 +65,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(7, "days")}
                     type="default"
                     suffix="ago"
@@ -80,7 +81,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(15, "days")}
                     type="default"
                     suffix="ago"
@@ -96,7 +97,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(35, "days")}
                     type="default"
                     suffix="ago"
@@ -112,7 +113,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(150, "days")}
                     type="default"
                     suffix="ago"
@@ -128,7 +129,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(365, "days")}
                     type="default"
                     suffix="ago"
@@ -144,7 +145,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(500, "days")}
                     type="default"
                     suffix="ago"
@@ -160,7 +161,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(3, "days")}
                     type="default"
                     suffix="ago"
@@ -170,6 +171,172 @@ const App = () => {
             </tr>
           </table>
         </center>
+
+        <div style={{ marginTop: 15 }}>
+          <code>{`<TimesAgo time={"time"} type="default" prefix="before" />`}</code>
+          <center style={{ marginTop: 15 }}>
+            <table style={{ border: "1px solid black" }}>
+              <th style={{ border: "1px solid black" }}>
+                <td>Input</td>
+              </th>
+              <th style={{ border: "1px solid black" }}>
+                <td>Output</td>
+              </th>
+              <tr style={{ border: "1px solid black" }}>
+                <td style={{ border: "1px solid black" }}>
+                  {moment().format("LLL")}
+                </td>
+                <td style={{ border: "1px solid black" }}>
+                  {<TimesAgo time={moment()} type="default" prefix="before" />}
+                </td>
+              </tr>
+              <tr style={{ border: "1px solid black" }}>
+                <td style={{ border: "1px solid black" }}>
+                  {moment()
+                    .subtract(1, "days")
+                    .format("LLL")}
+                </td>
+                <td style={{ border: "1px solid black" }}>
+                  {
+                    <TimesAgo
+                      time={moment().subtract(1, "days")}
+                      type="default"
+                      prefix="before"
+                    />
+                  }
+                </td>
+              </tr>
+              <tr style={{ border: "1px solid black" }}>
+                <td style={{ border: "1px solid black" }}>
+                  {moment()
+                    .subtract(5, "days")
+                    .format("LLL")}
+                </td>
+                <td style={{ border: "1px solid black" }}>
+                  {
+                    <TimesAgo
+                      time={moment().subtract(5, "days")}
+                      type="default"
+                      prefix="before"
+                    />
+                  }
+                </td>
+              </tr>
+              <tr style={{ border: "1px solid black" }}>
+                <td style={{ border: "1px solid black" }}>
+                  {moment()
+                    .subtract(7, "days")
+                    .format("LLL")}
+                </td>
+                <td style={{ border: "1px solid black" }}>
+                  {
+                    <TimesAgo
+                      time={moment().subtract(7, "days")}
+                      type="default"
+                      prefix="before"
+                    />
+                  }
+                </td>
+              </tr>
+              <tr style={{ border: "1px solid black" }}>
+                <td style={{ border: "1px solid black" }}>
+                  {moment()
+                    .subtract(15, "days")
+                    .format("LLL")}
+                </td>
+                <td style={{ border: "1px solid black" }}>
+                  {
+                    <TimesAgo
+                      time={moment().subtract(15, "days")}
+                      type="default"
+                      prefix="before"
+                    />
+                  }
+                </td>
+              </tr>
+              <tr style={{ border: "1px solid black" }}>
+                <td style={{ border: "1px solid black" }}>
+                  {moment()
+                    .subtract(35, "days")
+                    .format("LLL")}
+                </td>
+                <td style={{ border: "1px solid black" }}>
+                  {
+                    <TimesAgo
+                      time={moment().subtract(35, "days")}
+                      type="default"
+                      prefix="before"
+                    />
+                  }
+                </td>
+              </tr>
+              <tr style={{ border: "1px solid black" }}>
+                <td style={{ border: "1px solid black" }}>
+                  {moment()
+                    .subtract(150, "days")
+                    .format("LLL")}
+                </td>
+                <td style={{ border: "1px solid black" }}>
+                  {
+                    <TimesAgo
+                      time={moment().subtract(150, "days")}
+                      type="default"
+                      prefix="before"
+                    />
+                  }
+                </td>
+              </tr>
+              <tr style={{ border: "1px solid black" }}>
+                <td style={{ border: "1px solid black" }}>
+                  {moment()
+                    .subtract(365, "days")
+                    .format("LLL")}
+                </td>
+                <td style={{ border: "1px solid black" }}>
+                  {
+                    <TimesAgo
+                      time={moment().subtract(365, "days")}
+                      type="default"
+                      prefix="before"
+                    />
+                  }
+                </td>
+              </tr>
+              <tr style={{ border: "1px solid black" }}>
+                <td style={{ border: "1px solid black" }}>
+                  {moment()
+                    .subtract(500, "days")
+                    .format("LLL")}
+                </td>
+                <td style={{ border: "1px solid black" }}>
+                  {
+                    <TimesAgo
+                      time={moment().subtract(500, "days")}
+                      type="default"
+                      prefix="before"
+                    />
+                  }
+                </td>
+              </tr>
+              <tr style={{ border: "1px solid black" }}>
+                <td style={{ border: "1px solid black" }}>
+                  {moment()
+                    .subtract(3, "days")
+                    .format("LLL")}
+                </td>
+                <td style={{ border: "1px solid black" }}>
+                  {
+                    <TimesAgo
+                      time={moment().subtract(3, "days")}
+                      type="default"
+                      prefix="before"
+                    />
+                  }
+                </td>
+              </tr>
+            </table>
+          </center>
+        </div>
       </div>
 
       <div style={{ textAlign: "center" }}>
@@ -187,7 +354,7 @@ const App = () => {
                 {moment().format("LLL")}
               </td>
               <td style={{ border: "1px solid black" }}>
-                {<TimeAgo time={moment()} type="facebook" suffix="ago" />}
+                {<TimesAgo time={moment()} type="facebook" suffix="ago" />}
               </td>
             </tr>
             <tr style={{ border: "1px solid black" }}>
@@ -198,7 +365,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(1, "days")}
                     type="facebook"
                     suffix="ago"
@@ -214,7 +381,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(5, "days")}
                     type="facebook"
                     suffix="ago"
@@ -230,7 +397,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(7, "days")}
                     type="facebook"
                     suffix="ago"
@@ -246,7 +413,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(15, "days")}
                     type="facebook"
                     suffix="ago"
@@ -262,7 +429,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(35, "days")}
                     type="facebook"
                     suffix="ago"
@@ -278,7 +445,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(150, "days")}
                     type="facebook"
                     suffix="ago"
@@ -294,7 +461,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(365, "days")}
                     type="facebook"
                     suffix="ago"
@@ -310,7 +477,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(500, "days")}
                     type="facebook"
                     suffix="ago"
@@ -326,7 +493,7 @@ const App = () => {
               </td>
               <td style={{ border: "1px solid black" }}>
                 {
-                  <TimeAgo
+                  <TimesAgo
                     time={moment().subtract(3, "days")}
                     type="facebook"
                     suffix="ago"

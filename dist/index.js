@@ -20,13 +20,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 var moment = require("moment");
 
-var TimeAgo = function (_Component) {
-  _inherits(TimeAgo, _Component);
+var TimesAgo = function (_Component) {
+  _inherits(TimesAgo, _Component);
 
-  function TimeAgo(props) {
-    _classCallCheck(this, TimeAgo);
+  function TimesAgo(props) {
+    _classCallCheck(this, TimesAgo);
 
-    var _this = _possibleConstructorReturn(this, (TimeAgo.__proto__ || Object.getPrototypeOf(TimeAgo)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (TimesAgo.__proto__ || Object.getPrototypeOf(TimesAgo)).call(this, props));
 
     _this.state = {
       //da: "2019-04-23T06:43:25.793Z",
@@ -36,7 +36,7 @@ var TimeAgo = function (_Component) {
     return _this;
   }
 
-  _createClass(TimeAgo, [{
+  _createClass(TimesAgo, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       var _this2 = this;
@@ -150,14 +150,14 @@ var TimeAgo = function (_Component) {
     }
   }]);
 
-  return TimeAgo;
+  return TimesAgo;
 }(_react.Component);
 
-TimeAgo.defaultProps = {
+TimesAgo.defaultProps = {
   prefix: "",
   suffix: "ago",
   type: "default",
   time: new Date(1551788578911 * 1000)
 };
 
-exports.default = TimeAgo;
+exports.default = TimesAgo;
