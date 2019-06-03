@@ -16,7 +16,7 @@
     "deploy": "gh-pages -d examples/dist",
     "publish-demo": "npm run build && npm run deploy"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "description": "React-TimesAgo is a component that takes a date as a prop and returns a time-span with live updating date.",
   "main": "dist/index.js",
   "peerDependencies": {
     "react": "^16.3.0",
@@ -40,18 +40,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miteshtagadiya/package-boilerplate.git"
+    "url": "git+https://github.com/miteshtagadiya/React-TimesAgo.git"
   },
   "keywords": [
-    "boilerplate",
-    "code",
-    "for",
-    "package"
+    "react-timesago",
+    "timeago",
+    "timesago",
+    "react-timeago"
   ],
   "author": "Mitesh Tagadiya",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/miteshtagadiya/package-boilerplate/issues"
+    "url": "https://github.com/miteshtagadiya/React-TimesAgo/issues"
   },
-  "homepage": "https://github.com/miteshtagadiya/package-boilerplate#readme"
+  "homepage": "https://github.com/miteshtagadiyaReact-TimesAgo#readme"
 }
