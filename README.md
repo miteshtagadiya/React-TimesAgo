@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
+## React-TimesAgo
 
-You can use the [editor on GitHub](https://github.com/miteshtagadiya/TimeAgo/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+React-TimesAgo is a component that takes a date as a prop and returns a time-span with live updating date.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Demo
+[React-TimesAgo](https://miteshtagadiya.github.io/React-TimesAgo/)
 
-### Markdown
+## Installation
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1.  Install React-TimesAgo as a dependency
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# NPM
+npm install react-timesago
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+2.  Import the `react-timesago` module
 
-### Jekyll Themes
+```markdown
+// ES6
+import TimesAgo from "react-timesago";
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/miteshtagadiya/TimeAgo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Example
+```jsx
+import TimesAgo from 'react-timesago';
 
-### Support or Contact
+render() {
+<TimesAgo time={date} type="default" suffix="ago" /> // type default
+<TimesAgo time={date} type="default" prefix="before" /> // type default
+<TimesAgo time={date} type="facebook" /> // type facebook
+}
+```
+## Props
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+These are all of the available props (and their default values) for the `<TimesAgo />` component.
+```markdown
+{
+    prefix: "",
+    suffix: "ago",
+    type: "default",
+    time: new Date(1551788578911 * 1000)
+}
+```
+
+## Props Details
+
+* `prefix` - formatter prefix for date, ignored for type facebook.
+* `suffix` - formatter suffix for date, ignored for type facebook.
+* `type` - types for date format (facebook or default)
+* `time` - date.
