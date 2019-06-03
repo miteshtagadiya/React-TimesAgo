@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 var moment = require("moment");
 
-class TimeAgo extends Component {
+class TimesAgo extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -140,11 +140,11 @@ class TimeAgo extends Component {
   }
 }
 
-TimeAgo.defaultProps = {
+TimesAgo.defaultProps = {
   prefix: "",
   suffix: "ago",
   type: "default",
   time: new Date(1551788578911 * 1000)
 };
 
-export default TimeAgo;
+export default TimesAgo;
