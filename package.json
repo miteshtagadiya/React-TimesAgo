@@ -1,7 +1,6 @@
 {
   "name": "react-timesago",
   "version": "0.0.1",
-  "private": true,
   "dependencies": {
     "moment": "^2.24.0",
     "react-scripts": "^3.0.0"
