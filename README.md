@@ -1,6 +1,9 @@
 ## React-TimesAgo
 
 [![npm](https://img.shields.io/npm/v/react-timesago.svg)](https://www.npmjs.com/package/react-timesago)
+[![npm](https://img.shields.io/npm/dm/react-timesago.svg)](https://www.npmjs.com/package/react-timesago) 
+[![npm](https://img.shields.io/npm/dw/react-timesago.svg)](https://www.npmjs.com/package/react-timesago)
+![npm](https://img.shields.io/npm/l/react-timesago.svg)
 
 React-TimesAgo is a component that takes a date as a prop and returns a time-span with live updating date.
 
