@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "moment": "^2.24.0",
-    "react-scripts": "^3.0.0"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "webpack-dev-server --mode development",
@@ -33,7 +33,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "style-loader": "^0.21.0",
-    "webpack": "^4.15.0",
+    "webpack": "^5.105.2",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
   },
